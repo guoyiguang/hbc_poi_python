@@ -143,7 +143,7 @@ def select_mo():
         sql = '''update cm_sight_mafengwo_etl set hbc_pics = '%s' where sight_id = %s'''%(img_str,sight_id)
         cursor.execute(sql)
         conn.commit()
-    # 关闭游标 释放链接
+    # 关闭游标 释放链
     conn.close()
     cursor.close()
 

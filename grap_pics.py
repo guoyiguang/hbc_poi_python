@@ -118,8 +118,9 @@ def select_mo():
 
     for row in result:
         sight_id = row[0]
+
         # 首先将字符串去除两边[] 然后按照逗号进行切割 存储为列表
-        # 取模
+        # 取模啊
         m = int(sight_id) % 100
         list = row[1].strip("[]").split(",")
         # 遍历列表，然后对每一个URL进行爬取
